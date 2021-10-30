@@ -1,0 +1,67 @@
+@media (max-width: 1020px) {
+    .navigation {
+        left: -300px;
+    }
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    .main.active {
+        left: 300px;
+    }
+    .navigation.active {
+        left: 0;
+        width: 300px;
+    }
+    .cardBox {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 15px;
+    }
+}
+@media (max-width: 810px) {
+    .details {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .recentOrders {
+        overflow-x: auto;
+
+    }
+    .recentCustomers {
+     
+    }
+}
+@media (max-width: 550px) {
+    .cardBox {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+    .cardHeader h2 {
+        font-size: 1.8em;
+    }
+    .recentCustomers h4 {
+        font-size: 20px;
+    }
+    .recentCustomers span {
+        font-size: 15px;
+    }
+    .navigation {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active {
+        width: 100%;
+        left: 0;
+    }
+    .toggle {
+        z-index: 1000;
+        transition: 0.5s;
+    }
+    .main.active .toggle {
+        position: fixed;
+        right: 0;
+        left: inherit;
+        color: white;
+    }
+    .toggle 
+}
