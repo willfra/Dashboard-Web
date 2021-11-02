@@ -51,6 +51,8 @@
     }
     .navigation.active {
         width: 100%;
+        max-width: 100vh;
+        max-height: 100vh;
         left: 0;
     }
     .toggle {
